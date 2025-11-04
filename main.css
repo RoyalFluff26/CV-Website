@@ -1,0 +1,161 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'EB Garamond', serif;
+}
+
+h2 {
+  font-size: xx-large;
+}
+
+.parallax-container {
+  position: relative;
+  height: 61vh;
+  overflow: hidden;
+}
+
+.parallax-bg {
+  background-image: url('Parallax.jpg'); 
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; 
+  z-index: -1;
+  transition: transform 0.1s ease-out;
+  will-change: transform;
+  transform: translateZ(0)
+}
+
+.parallax-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 25vh;
+}
+
+.content {
+  background-color: #ffe9ec; 
+  text-align: center;
+  padding: 80px 20px;
+  margin-top: 10px;
+}
+
+.navbar-logo {
+  display: block;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 800px) {
+  .navbar-logo {
+    display: none;
+  }
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+justify-content: center;
+}
+
+@media (max-width: 750px) {
+  .nav-links {
+    flex-direction: column;
+  }
+}
+
+.navbar-button {
+  display: inline-block;
+  padding: 12px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 12px;
+  border-width: 2px;
+  background-color: #ffe9ec; 
+  border: 1px solid;
+  border-color: #d1d1d1;
+  text-decoration: none;
+  color: #333;
+}
+
+.navbar-button:hover {
+  background-color: #f5cbd3; 
+  color: #333;               
+}
+
+.navbar {
+  background-color: #f5f5f5;
+  height: 60px;
+}
+
+#navbar_container{
+  background-color: #f5f5f5;
+  padding: 10px;
+  margin: 0px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.navbar ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+p{
+  font-size: 20px;
+}
+
+.bullet-point-container{
+  justify-self: center;
+  width: 34%;
+  align-content: left;
+}
+
+@media (max-width: 768px) {
+  .bullet-point-container {
+    justify-self: center;
+    width: 75%;
+    align-content: left;
+  }
+}
+.bullet-point{
+  display: flex;
+}
+
+.button img {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.2s ease;
+}
+
+.contact-logo {
+  height: 40px;
+  align-self: center;
+}
+
+.divider {
+  border: none;
+  height: 0.5px;              
+  background-color: #000;   
+  width: 225px;               
+  margin: 0.25rem auto 1rem; 
+}
