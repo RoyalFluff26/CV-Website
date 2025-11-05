@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=chrome">
+    <title>Home</title>
+    <meta name="description" content="My CV">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="Favicon.png">
+  </head>
+  <body>
+    <div id="app">
+      <nav>
+        <a href="#app">
+          <img src="Favicon.png" alt="Logo" class="navbar-logo"></a>
+        <ul class="nav-links">
+          <li v-for="item in nav_items" :key="item.title"><a class="navbar-button" v-bind:href="item.link">{{ item.title }}</a></li>
+        </ul>
+      </nav>
+      <main>
+
+      </main>
+      <footer>
+
+      </footer>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
