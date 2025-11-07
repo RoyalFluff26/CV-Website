@@ -11,6 +11,8 @@ nav {
   justify-content: center;
   width: 100vw;
   height: 60px;
+  position: sticky;
+  top: 0;
 }
 
 .navbar-logo {
@@ -48,8 +50,32 @@ nav {
   color: #110a01;
 }
 
+.navbar-button:hover, .navbar-button #active {
+  background-color: #d4c798;
+  border-bottom: 2px solid #54380a;
+}
+
 main {
   background-color: #EEEEEE;
   height: 100vw;
 }
 
+.content_box {
+
+}
+
+.content {
+
+}
+
+.paragraph {
+
+}
+
+.bullet {
+
+}
+
+.name {
+
+}

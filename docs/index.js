@@ -1,6 +1,7 @@
 const app = Vue.createApp({
   data() {
     return {
+      activeItem: "About Me",
       nav_items: [
         {title: "About Me", link: "#about_me"},
         {title: "Work Experience", link: "#work_experience"},
@@ -18,6 +19,11 @@ const app = Vue.createApp({
           ]}
         ]}
       ]
+    }
+  },
+  methods: {
+    setActive(title) {
+      this.activeItem = title;
     }
   }
 })
