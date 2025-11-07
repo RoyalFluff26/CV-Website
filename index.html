@@ -7,19 +7,21 @@
     <meta name="description" content="My CV">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
-    <link rel="icon" href="Favicon.png">
+    <link rel="icon" href="Images/Favicon.png">
   </head>
   <body>
     <div id="app">
       <nav>
         <a href="#app">
-          <img src="Favicon.png" alt="Logo" class="navbar-logo"></a>
+          <img src="Images/Favicon.png" alt="Logo" class="navbar-logo"></a>
         <ul class="nav-links">
-          <li v-for="item in nav_items" :key="item.title"><a class="navbar-button" v-bind:href="item.link">{{ item.title }}</a></li>
+          <li class="navbar-button" v-for="item in nav_items" :key="item.title"><a v-bind:href="item.link">{{ item.title }}</a></li>
         </ul>
       </nav>
       <main>
-
+        <div>
+          
+        </div>
       </main>
       <footer>
 
