@@ -20,14 +20,15 @@
       </nav>
       <main>
         <div v-for="section in sections" :key="section.title" :id="section.id" class="content_box">
+          <h1 class="section-title">{{ section.title }}</h2>
           <div v-for="item in section.items" :key="item.name" class="content">
             <div v-if="item.type == 'paragraph'" class="paragraph">
-              <h1>{{item.name}}</h1>
-              <p v-for="paragraph in paragraphs">{{paragraph.content}}</p>
+              <h1 v-if="item.name">{{item.name}}</h1>
+              <p v-for="paragraph in item.paragraphs">{{paragraph.content}}</p>
             </div>
             <div v-else-if="item.type == 'bullet'" class="bullet">
-              <h1><span class="name">{{item.name}}</span>{{item.location}}</h1>
-              <h3>{{item.address}}|{{item.start}}|{{item.end}}</h3>
+              <h1><span class="name">{{item.name}}</span> - {{item.location}}</h1><hr>
+              <h3>{{item.address}} | {{item.start}} | {{item.end}}</h3>
               <ul>
                 <li v-for="point in item.bullets">{{point.content}}</li>
               </ul>

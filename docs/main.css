@@ -11,8 +11,13 @@ nav {
   justify-content: center;
   width: 100vw;
   height: 60px;
-  position: sticky;
+  position: fixed;
   top: 0;
+  border-bottom: #54380A 1px solid;
+}
+
+body {
+  padding-top: 60px;
 }
 
 .navbar-logo {
@@ -58,14 +63,27 @@ nav {
 main {
   background-color: #EEEEEE;
   height: 100vw;
+  justify-items: center;
+  padding: 40px 20px;
 }
 
 .content_box {
-
+  border: 1px black solid;
+  border-radius: 10px;
+  background-color: #F8ECC0;
+  width: 60vw;
+  padding: 20px;
+  scroll-margin-top: 100px;
+  margin-bottom: 40px;
 }
 
 .content {
+  color: #110a01;
+  padding-bottom: 20px;
+}
 
+.content_box:last-child {
+  padding-bottom: 0;
 }
 
 .paragraph {
@@ -77,5 +95,21 @@ main {
 }
 
 .name {
+  color: #1e5a20;
+}
 
+.section-title {
+  justify-self: center;
+  font-size: 50px;
+  padding-bottom: 20px;
+}
+
+hr {
+  width: 50%;
+  margin: 10px 0;
+  border-color: #54380A;
+}
+
+p {
+  font-size: 20px;
 }
