@@ -19,8 +19,9 @@
         </ul>
       </nav>
       <main>
-        <div v-for="section in sections" :key="section.title" :id="section.id" class="content_box">
-          <h1 class="section-title">{{ section.title }}</h2>
+        <div v-for="section in sections" :key="section.title" class="content_box">
+          <span :id="section.id" class="scroll-anchor"></span>
+          <h1 class="section-title">{{ section.title }}</h1>
           <div v-for="item in section.items" :key="item.name" class="content">
             <div v-if="item.type == 'paragraph'" class="paragraph">
               <h1 v-if="item.name">{{item.name}}</h1>

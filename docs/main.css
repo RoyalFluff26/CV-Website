@@ -16,6 +16,10 @@ nav {
   border-bottom: #54380A 1px solid;
 }
 
+html {
+  scroll-padding-top: 80px;
+}
+
 body {
   padding-top: 60px;
 }
@@ -62,7 +66,7 @@ body {
 
 main {
   background-color: #EEEEEE;
-  height: 100vw;
+  height: 100vh;
   justify-items: center;
   padding: 40px 20px;
 }
@@ -73,7 +77,6 @@ main {
   background-color: #F8ECC0;
   width: 60vw;
   padding: 20px;
-  scroll-margin-top: 100px;
   margin-bottom: 40px;
 }
 
@@ -84,14 +87,6 @@ main {
 
 .content_box:last-child {
   padding-bottom: 0;
-}
-
-.paragraph {
-
-}
-
-.bullet {
-
 }
 
 .name {
@@ -112,4 +107,11 @@ hr {
 
 p {
   font-size: 20px;
+}
+
+.scroll-anchor {
+  display: block;
+  height: 60px;
+  margin-top: -60px;
+  visibility: hidden;
 }
